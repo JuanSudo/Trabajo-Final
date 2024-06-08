@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+
+    <link rel="stylesheet" href="styles/estilo.css">
+
+    <style>
+        .title {
+            font-weight: bold;
+        }
+
+        /* Estilos para la imagen de usuario */
+        .usuario {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .usuario img {
+            height: 300px;
+            width: 300px;
+        }
+
+        /* Estilos para el formulario */
+        .llenado_datos {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .llenado_datos li {
+            margin-bottom: 10px; /* Ajusta el espaciado entre los elementos del formulario */
+        }
+
+        .llenado_datos label {
+            font-weight: bold;
+            display: inline-block;
+            background-color: #f0f0f0; /* Color de fondo del botón */
+            padding: 15px; /* Ajusta el relleno */
+            border: 1px solid #ccc; /* Borde del botón */
+            border-radius: 5px; /* Bordes redondeados */
+            position: relative; /* Para posicionar el símbolo "+" */
+            cursor: pointer; /* Cambia el cursor al pasar por encima */
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+        }
+
+        .llenado_datos label::after {
+            content: "+"; /* Añade el símbolo "+" */
+            position: absolute; /* Lo posiciona con respecto al botón */
+            right: -15px; /* Lo coloca en el extremo derecho */
+            top: 50%; /* Lo centra verticalmente */
+            transform: translateY(-50%); /* Lo ajusta verticalmente */
+            font-weight: bold; /* Hace el símbolo "+" más visible */
+        }
+
+        .llenado_datos label:hover {
+            background-color: #e0e0e0; /* Cambia el color de fondo al pasar por encima */
+        }
+
+        .llenado_datos input[type="text"] {
+            display: none; /* Oculta los campos de texto */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="user">
+            <ul class="usuario">
+                <li>
+                    <a href="" class="logo">
+                        <img src="images/usuario.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="llenado_datos">
+            <li>
+                <input type="text" id="fname" name="fname" value="">
+                <label for="fname">Datos personales</label><br>
+            </li>
+            <li>
+                <input type="text" id="fono" name="fono" value="">
+                <label for="fono">Correo:</label><br>
+            </li>
+            <li>
+                <input type="text" id="correo" name="correo" value="">
+                <label for="correo">Sincronización:</label><br>
+            </li>
+            <li>
+                <input type="text" id="asunto" name="asunto" value="">
+                <label for="asunto">Idioma:</label><br>
+            </li>
+            <li>
+                <a href="HomePage.html"><input type="submit" value="Log Out"></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="actions-container">
+        <div class="profile-actions">
+            <a href="Main.html"><span class="boton">Reporte</span></a>
+            <a href="Comentarios.html"><span class="boton">Comentarios</span></a>
+        </div>
+    </div>
+
+    <div class="Container_SN">
+        <ul class="Logo_Secure">
+            <li>
+                <a href="" class="logo">
+                    <img src="images/logo.jpeg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
